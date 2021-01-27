@@ -1,4 +1,5 @@
 #!/bin/bash
-rm  /tmp/holberton/betty
+rm /tmp/holberton/betty
+
 
 
