@@ -1,1 +1,1 @@
-Hello, this is the project of shell_redirections!!
+Hello, this is my redirections project!!
