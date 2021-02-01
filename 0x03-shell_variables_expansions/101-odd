@@ -1,0 +1,2 @@
+#!/bin/bash
+perl -ne 'printf if ($.%2)'
