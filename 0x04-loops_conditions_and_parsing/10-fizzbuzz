@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
-# Bash script that displays numbers from 1 to 100
+# Bash script that displays numbers from 1 to 100 fizz buzz
 x=1
 while [ $x -le 100 ]
 do
     if [[ $(($x % 15)) == 0 ]]
     then
-        echo 'FizzBuzz'
+        echo "FizzBuzz"
     elif [[ $(($x % 5)) == 0 ]]
     then
-        echo 'Buzz'
+        echo "Buzz"
     elif [[ $(($x % 3)) == 0 ]]
     then
-        echo 'Fizz'
+        echo "Fizz"
     else
         echo $x
     fi
