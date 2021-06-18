@@ -3,21 +3,22 @@
 x=1
 while [ $x -le 20 ]
 do
-    if [ $x == 4 ]
-    then
-        echo $x
-        echo 'bad luck from China'
-    elif [ $x == 9 ]
-    then
-        echo $x
-        echo 'bad luck from Japan'
-    elif [ $x == 17 ]
-    then
-        echo $x
-        echo 'bad luck from Italy'
-    else
-        echo $x
-    fi
+    case $x in
+        4)
+            echo $x
+            echo 'bad luck from China'
+            ;;
+        9)
+            echo $x
+            echo 'bad luck from Japan'
+            ;;
         
-        ((x++))
+        17)
+            echo $x
+            echo 'bad luck from Italy'
+            ;;
+        *)
+            echo $x
+    esac
+    ((x++))
 done
