@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#  This script displays "Holberton School" 10 times with foor loop
+for i in {0..9}
+do
+    echo "Holberton School"
+done
