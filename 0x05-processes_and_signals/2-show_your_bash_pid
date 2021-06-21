@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# a Bash script  that displays a list of currently running processes
-ps -F
+# print bash pid.
+# shellcheck disable=SC2009
+ps auxf | grep bash
