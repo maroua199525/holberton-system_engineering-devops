@@ -11,3 +11,13 @@ You must be able to explain system redundancy
 Know all the mentioned acronyms: LAMP, SPOF, QPS
 File Descriptions
 Each file contains a link to an image hosted on Imgur.
+Peer Project made within 4 days.
+
+Authors
+Rim Joudi - (https://github.com/RimJoudi)
+
+Maroua Alaya - (https://github.com/maroua199525)
+
+Holberton school
+
+Project made for Holberton school by Rim Joudi and Marwa Alaya.
