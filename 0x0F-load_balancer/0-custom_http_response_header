@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# configure web-02 to be identical to web-01
+apt-get update
+apt-get -y install nginx
+chown -R "$USER":"$USER" /var/www/html/index.nginx-debian.html
+chmod -R 755 /var/www
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+ufw allow 'Nginx HTTP'
+line="\\\tadd_header X-Served-By $HOSTNAME;"
+sed -i "11i $line" /etc/nginx/nginx.conf
+service nginx restart
