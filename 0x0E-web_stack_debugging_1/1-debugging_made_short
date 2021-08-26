@@ -2,4 +2,4 @@
 # tried to find the error in the configuration of Nginix (sites-available, sites-enabled)
 sudo ln -s -f /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
-sudo pkill nginix
+sudo pkill nginx
