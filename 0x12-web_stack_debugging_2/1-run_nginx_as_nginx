@@ -2,8 +2,7 @@
 # a Bash script that configures the container to fit the above requirements
 # nginx must be running as nginx user
 # nginx must be listening on all active IPs on port 8080
-
-pkill apache2
+sudo pkill apache2
 sudo chown -R nginx:nginx /etc/nginx/nginx.conf
 sudo chmod 700 /etc/nginx/nginx.conf
 sudo sed -i 's/80/8080/' /etc/nginx/sites-enabled/default
