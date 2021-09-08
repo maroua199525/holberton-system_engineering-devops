@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # a Bash script that configures the container to fit the above requirements
 sudo pkill apache2
-sudo chmod 700 /etc/nginx/nginx.conf
+sudo chown -R nginx:nginx /etc/nginx/nginx.conf
 sudo chmod 700 /etc/nginx/nginx.conf
 sudo sed -i 's/80/8080/' /etc/nginx/sites-enabled/default
 sudo --user nginx service nginx start
