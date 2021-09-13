@@ -13,7 +13,7 @@ def employee_csv():
     employeeId = sys.argv[1]
     url_user = "https://jsonplaceholder.typicode.com/users/" + employeeId
     response = requests.get(url_user).json()
-    EMPLOYEE_NAME = response.get('name')
+    EMPLOYEE_NAME = response.get('username')
     url_todo = ("https://jsonplaceholder.typicode.com/users/" + employeeId +
                 '/todos')
     response1 = requests.get(url_todo).json()
